@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Student Dashboard</h1>
+        <h2>Welcome, <span id="studentName"></span></h2>
+        <div class="attendance-summary">
+            <h3>Total Attendance</h3>
+            <p id="totalAttendance"></p>
+            <p id="warning" class="warning"></p>
+        </div>
+        <div class="class-details">
+            <h3>Class-wise Attendance</h3>
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Total Classes</th>
+                        <th>Attended Classes</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <button onclick="window.location.href='index.html'"><a href="dashboard.html">Logout</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
